@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The Android Open Source Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,14 +22,12 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Inherit language packages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := brepdugl
 PRODUCT_NAME := omni_brepdugl
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := HTC Desire 12+
 PRODUCT_MANUFACTURER := HTC
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=brepdugl \
-	BUILD_PRODUCT=htc_brepdugl \
-    TARGET_DEVICE=htc_brepdugl
