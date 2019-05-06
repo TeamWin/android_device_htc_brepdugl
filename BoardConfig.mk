@@ -70,6 +70,7 @@ TW_NO_EXFAT_FUSE := true
 TW_NO_SCREEN_BLANK := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXTRA_LANGUAGES := true
+TW_USE_TOOLBOX := true
 
 # Custom Platform Version and Security Patch
 # TWRP Defaults
