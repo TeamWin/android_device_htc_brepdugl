@@ -80,11 +80,17 @@ TW_EXTRA_LANGUAGES := true
 #PLATFORM_VERSION := 8.0.0
 #PLATFORM_SECURITY_PATCH := 2018-04-01
 # htc_brepdugl 1.50.709.9
+#PLATFORM_VERSION := 8.0.0
+#PLATFORM_SECURITY_PATCH := 2018-09-01
+# htc_brepdugl 1.70.709.9
+#PLATFORM_VERSION := 8.0.0
+#PLATFORM_SECURITY_PATCH := 2019-01-01
+# htc_brepdugl 1.100.709.3
 PLATFORM_VERSION := 8.0.0
-PLATFORM_SECURITY_PATCH := 2018-09-01
+PLATFORM_SECURITY_PATCH := 2019-04-01
 
 # TWRP custom version
-TW_DEVICE_VERSION ?= $(shell date -u +"%Y%m%d")
+#TW_DEVICE_VERSION ?= $(shell date -u +"%Y%m%d")
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
@@ -93,4 +99,5 @@ TW_CRYPTO_USE_SYSTEM_VOLD := hwservicemanager servicemanager qseecomd keymaster-
 TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor
 
 # Build fix
-ALLOW_MISSING_DEPENDENCIES := true
+# uncomment this if using minimal android source
+#ALLOW_MISSING_DEPENDENCIES := true
